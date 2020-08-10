@@ -1,0 +1,173 @@
+html, body{
+    zoom: 1;
+    transform: scale(1.0);
+    transform-origin: 0 0;
+    background: black;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0;
+    height: 100%;
+    
+}
+
+.wrapper{
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0;
+    min-height: 100%;
+    height:auto !important;
+    color: white;
+    width: 100%;
+}
+
+.main, .bg{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    position: absolute;
+}
+
+.bg{
+    background-image: url(../bg/0.jpg);
+    background-size: cover;
+    filter: blur(3px) brightness(0.5);
+}
+
+.content{
+    border: 0px solid white;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+    margin: 50px;
+}
+
+.border{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    outline: 1px solid white;
+    outline-offset: -50px;
+    transition: ease-in-out 1s;
+}
+
+.invis{
+    opacity: 0;
+}
+
+.panel-selection{
+    height: 500px;
+    width: 20%;
+    min-width: 375px;
+    position: relative;
+    top: 15%;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ps-item{
+    height: 10%;
+    padding: 10px 0;
+
+    position: relative;
+    right: 0;
+    width: 100%;
+}
+.ps-item:hover>.ps-disc{
+    right: 10%;
+}
+
+
+.ps-disc{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    text-align: right;
+    font-size: 50px;
+    pointer-events: none;
+    font-weight: 900;
+    transition: ease 0.25s;
+}
+
+.socials-bar{
+    height: 100px;
+    position: absolute;
+    bottom: 10px;
+}
+
+.socials-text{
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+.icon-container{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.icon-link{
+    width: 30px;
+    height: 30px;
+    padding: 0px 5px;
+    object-fit: contain;
+}
+
+.icon-container > a > img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.panel-container{
+    width: 50%;
+    min-width: 400px;
+    position: relative;
+    top: 15%;
+    margin-right: 50px;
+    height: 60%;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+}
+
+.panel{
+    height: 2000px;
+    width: 90%;
+    margin: auto;
+}
+
+.panel-container::-webkit-scrollbar{
+    display: none;
+}
+
+.p-header{
+    font-size: 100px;
+    font-weight: 900;
+    width: 100%;
+    height: 110px;
+}
+
+.p-subhead{
+    position: relative;
+    font-size: 30px;
+    left: 250px;
+}
+
+.p-para{
+    position: relative;
+    top: 100px;
+    width: 70%;
+    height: 300px;
+    font-size: 20px;
+}
