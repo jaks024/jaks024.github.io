@@ -96,23 +96,14 @@ html, body{
     transition: ease 0.25s;
 }
 
-.socials-bar{
-    height: 100px;
-    position: absolute;
-    bottom: 10px;
-}
-
-.socials-text{
-    font-size: 15px;
-    margin-bottom: 7px;
-}
-
 .icon-container{
+    position: relative;
+    right: -3px;
     width: 100%;
     height: 30px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
     overflow: hidden;
 }
 
@@ -128,6 +119,10 @@ html, body{
     height: 100%;
 }
 
+.ps-email{
+    text-align: right;
+    padding-bottom: 10px;
+}
 
 .panel-container{
     width: 50%;
@@ -135,7 +130,7 @@ html, body{
     position: relative;
     top: 15%;
     margin-right: 50px;
-    height: 60%;
+    height: 70%;
     overflow-y: scroll;
     -ms-overflow-style: none;  
     scrollbar-width: none; 
@@ -161,7 +156,7 @@ html, body{
 .p-subhead{
     position: relative;
     font-size: 30px;
-    left: 250px;
+    left: 215px;
 }
 
 .p-para{
