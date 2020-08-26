@@ -43,7 +43,7 @@ html, body{
     flex-direction: row;
     justify-content: center;
     overflow: hidden;
-    margin: 50px;
+    margin: 20px;
     transition: all 0.75s ease-in-out;
 }
 
@@ -53,7 +53,7 @@ html, body{
     position: absolute;
     box-sizing: border-box;
     outline: 1px solid white;
-    outline-offset: -50px;
+    outline-offset: -20px;
     transition: ease-in-out 0.75s;
 }
 
@@ -62,11 +62,12 @@ html, body{
 }
 
 .panel-selection{
-    height: 500px;
+    z-index: 1;
+    height: 235px;
     width: 20%;
     min-width: 375px;
-    position: relative;
-    top: 15%;
+    position: absolute;
+    bottom: 10px;
     margin-right: 50px;
     display: flex;
     flex-direction: column;
@@ -129,15 +130,20 @@ html, body{
 .ps-email{
     text-align: right;
     padding-bottom: 10px;
+    margin-top: 10px;
+    opacity: 0.75;
+    transition: opacity 0.25s ease-in-out;
+}
+.ps-email:hover{
+    opacity: 1;
 }
 
 .panel-container{
     width: 50%;
     min-width: 375px;
     position: relative;
-    top: 15%;
-    margin-right: 50px;
-    height: 70%;
+    top: 10px;
+    height: 50%;
     overflow-y: scroll;
     -ms-overflow-style: none;  
     scrollbar-width: none; 
@@ -145,7 +151,7 @@ html, body{
 
 .panel{
     height: 0px;
-    width: 90%;
+    width: 88%;
     margin: auto;
     opacity: 0;
     transition: all 0.5s ease-in-out;
@@ -158,16 +164,16 @@ html, body{
 
 .p-show{
     opacity: 1;
-    height: 1000px;
+    height: 450px;
 }
 
 
 
 .p-header{
-    font-size: 80px;
+    font-size: 65px;
     font-weight: 900;
     width: 100%;
-    height: 90px;
+    height: 75px;
 }
 .p-subhead-s{
     position: relative;
@@ -199,7 +205,7 @@ html, body{
 .p-para{
     position: relative;
     top: 25px;
-    width: 70%;
+    width: 100%;
     height: 300px;
     font-size: 16px;
 }
