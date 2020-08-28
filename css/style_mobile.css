@@ -62,8 +62,7 @@ html, body{
 .panel-selection{
     z-index: 1;
     height: 235px;
-    width: 20%;
-    min-width: 375px;
+    width: 210px;
     position: absolute;
     bottom: 10px;
     right: 40px;
