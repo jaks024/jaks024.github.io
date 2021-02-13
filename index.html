@@ -3,6 +3,18 @@
 <html lang="en">
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176723773-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-176723773-1');
+  </script>
   <meta charset="utf-8">
   <title>Jackson Ye</title>
   <meta name="description" content="Everything that I've done">
@@ -20,132 +32,130 @@
     <div class="main">
       <div class="border"></div>
       <div class="content">
-        <nav class="panel-selection">
-          <div class="ps-item" onclick="changeTab('p0')">
-            <div class="ps-disc">
-              ME
+        <div class="content-offset">
+          <div class="panel-selection-offset">
+            <nav class="panel-selection">
+              <div class="ps-item" onclick="changeTab('p0')">
+                <div class="ps-disc">
+                  ME
+                </div>
+
+              </div>
+              <div class="ps-item" onclick="changeTab('p1')">
+                <div class="ps-disc">
+                  WORKS
+                </div>
+              </div>
+              <div class="ps-item" onclick="changeTab('p2')">
+                <div class="ps-disc">
+                  ART
+                </div>
+              </div>
+              <div class="ps-item">
+                <div class="ps-email">
+                  jacksonus0204@gmail.com
+                </div>
+                <div class="icon-container">
+                  <a class="icon-link" href="https://www.youtube.com/c/McFriedFries/" target="_blank">
+                    <img src="/icon/yt_icon_mono_dark.png" alt="youtube">
+                  </a>
+                  <a class="icon-link" href="#twitter" target="_blank">
+                    <img src="/icon/Twitter_Logo_WhiteOnImage1.png" alt="twitter">
+                  </a>
+                  <a class="icon-link" href="https://www.twitch.tv/mcfriedfries" target="_blank">
+                    <img src="/icon/TwitchGlitchWhite.svg" alt="twitch">
+                  </a>
+                  <a class="icon-link" href="https://github.com/jaks024" target="_blank">
+                    <img src="/icon/GitHub-Mark-Light-64px.png" alt="github">
+                  </a>
+                  <a class="icon-link" href="https://jaks.itch.io/" target="_blank">
+                    <img src="/icon/itchio-textless-white.svg" alt="itch.io">
+                  </a>
+                  <a class="icon-link" href="#instagram" target="_blank">
+                    <img src="/icon/glyph-logo_May2016.png" alt="instagram">
+                  </a>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <div class="panel-container">
+            <div class="panel p-show" id="p0">
+
+              <div class="p-header p-name">
+                JACKSON YE
+              </div>
+              <div class="p-subhead-s">
+
+              </div>
+              <div class="p-para">
+                A mathematics student from University of Waterloo.
+                <br>
+                This website contains everything that I have been up to.
+                <br>
+
+                <br><br>
+                Thanks for stoping by! :)
+              </div>
             </div>
 
-          </div>
-          <div class="ps-item" onclick="changeTab('p1')">
-            <div class="ps-disc">
-              WORKS
-            </div>
-          </div>
-          <div class="ps-item" onclick="changeTab('p2')">
-            <div class="ps-disc">
-              ART
-            </div>
-          </div>
-          <div class="ps-item">
-            <div class="ps-email">
-              jacksonus0204@gmail.com
-            </div>
-            <div class="icon-container">
-              <a class="icon-link" href="https://www.youtube.com/c/McFriedFries/" target="_blank">
-                <img src="/icon/yt_icon_mono_dark.png" alt="youtube">
-              </a>
-              <a class="icon-link" href="#twitter" target="_blank">
-                <img src="/icon/Twitter_Logo_WhiteOnImage1.png" alt="twitter">
-              </a>
-              <a class="icon-link" href="https://www.twitch.tv/mcfriedfries" target="_blank">
-                <img src="/icon/TwitchGlitchWhite.svg" alt="twitch">
-              </a>
-              <a class="icon-link" href="https://github.com/jaks024" target="_blank">
-                <img src="/icon/GitHub-Mark-Light-64px.png" alt="github">
-              </a>
-              <a class="icon-link" href="https://jaks.itch.io/" target="_blank">
-                <img src="/icon/itchio-textless-white.svg" alt="itch.io">
-              </a>
-              <a class="icon-link" href="#instagram" target="_blank">
-                <img src="/icon/glyph-logo_May2016.png" alt="instagram">
-              </a>
-            </div>
-          </div>
-        </nav>
-
-        <div class="panel-container">
-          <div class="panel p-show" id="p0">
-
-            <div class="p-header">
-              Jackson Ye
-            </div>
-            <div class="p-subhead-s">
-              
-            </div>
-            <div class="p-para">
-              A mathematics student from University of Waterloo.
+            <div class="panel" id="p1">
+              <div class="p-header">
+                WORKS
+                <br>
+              </div>
               <br>
-              This website contains everything that I have been up to.
-              <br>
-
-              <br><br>
-              Thanks for stoping by! :)
+              <ul class="p-list">
+                <div class="p-bullet">
+                  <a href="https://github.com/jaks024/my-todo-list" target="_blank">My ToDo List</a>
+                  <div class="p-para-s">
+                    A 24 hour, non date based to do list desktop application built with Electron
+                  </div>
+                </div>
+                <div class="p-bullet">
+                  <a href="https://github.com/jaks024/osu-song-player" target="_blank">osu! song player</a>
+                  <div class="p-para-s">
+                    A MP3 player for all the songs in the osu! folder built with WPF
+                  </div>
+                </div>
+                <div class="p-bullet">
+                  <a href="https://play.google.com/store/apps/details?id=com.jy.mywatchlist&hl=en" target="_blank">My
+                    Watch List</a>
+                  <div class="p-para-s">
+                    An Android app to keep track of your entertainment built with Android Studio
+                  </div>
+                </div>
+                <div class="p-bullet">
+                  <a href="https://github.com/jaks024/json-customer-tracker" target="_blank">JSON User Tracker</a>
+                  <div class="p-para-s">
+                    A simple to use detailed user data entry system built with WPF
+                  </div>
+                </div>
+                <div class="p-bullet">
+                  <a href="https://github.com/jaks024/GSGen" target="_blank">GSGen - (on hold)</a>
+                  <div class="p-para-s">
+                    A static website generator with GUI built with WPF
+                  </div>
+                </div>
+                <div class="p-bullet">
+                  <a href="https://jaks.itch.io/" target="_blank">itch.io User Page</a>
+                  <div class="p-para-s">
+                    My itch.io user page containing free 2D and 3D assets and games.
+                  </div>
+                </div>
+              </ul>
             </div>
-          </div>
-
-          <div class="panel" id="p1">
-            <div class="p-header">
-              WORKS
+            <div class="panel" id="p2">
+              <div class="p-header">
+                ART
+                <br>
+              </div>
               <br>
-            </div>
-            <br><br>
-            <ul class="p-list">
-              <div class="p-bullet">
-                <a href="https://github.com/jaks024/ig-auto-liker" target="_blank">Instagram Auto Liker</a>
-                <div class="p-para-s">
-                  WIP - Automatic Instagram hashtag post liker in random intervals 
-                </div>
+              <div class="p-header" style="font-size: 25px;">
+                STILL GRINDING
+                <br><br>
+                COMING SOON!!!
+                <br>
               </div>
-              <div class="p-bullet">
-                <a href="https://github.com/jaks024/my-todo-list" target="_blank">My ToDo List</a>
-                <div class="p-para-s">
-                  A 24 hour, non date based to do list desktop application built with Electron
-                </div>
-              </div>
-              <div class="p-bullet">
-                <a href="https://github.com/jaks024/osu-song-player" target="_blank">osu! song player</a>
-                <div class="p-para-s">
-                  A MP3 player for all the songs in the osu! folder built with WPF
-                </div>
-              </div>
-              <div class="p-bullet">
-                <a href="https://play.google.com/store/apps/details?id=com.jy.mywatchlist&hl=en" target="_blank">My Watch List</a>
-                <div class="p-para-s">
-                  An Android app to keep track of your entertainment built with Android Studio
-                </div>
-              </div>
-              <div class="p-bullet">
-                <a href="https://github.com/jaks024/json-customer-tracker" target="_blank">JSON User Tracker</a>
-                <div class="p-para-s">
-                  A simple to use detailed user data entry system built with WPF 
-                </div>
-              </div>
-              <div class="p-bullet p-bullet-0">
-                <a href="https://github.com/jaks024/GSGen" target="_blank">GSGen - (on hold)</a>
-                <div class="p-para-s">
-                  A static website generator with GUI built with WPF
-                </div>
-              </div>
-              <div class="p-bullet">
-                <a href="https://jaks.itch.io/" target="_blank">itch.io User Page</a>
-                <div class="p-para-s">
-                  My itch.io user page containing free 2D and 3D assets and games.
-                </div>
-              </div>
-            </ul>
-          </div>
-          <div class="panel" id="p2">
-            <div class="p-header">
-              ART
-              <br>
-            </div>
-            <br><br>
-            <div class="p-header" style="font-size: 25px;">
-              STILL GRINDING
-              <br><br>
-              COMING SOON!!!
-              <br>
             </div>
           </div>
         </div>
