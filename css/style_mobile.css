@@ -205,7 +205,8 @@ html, body{
     font-size: 50px;
     white-space: normal;
     height: 100px;
-    width: 300px;
+    width: 100px;
+    overflow:visible;
 }
 .p-subhead-s{
     position: relative;
