@@ -195,7 +195,7 @@ button{
 
 .panel{
     height: 0px;
-    width: calc(100% - 20px);
+    width: calc(100% - 40px);
     margin: 0px 20px;
     opacity: 0;
     transition: all 0.5s ease;
