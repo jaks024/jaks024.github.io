@@ -35,25 +35,31 @@
         <div class="content-offset">
           <div class="panel-selection-offset">
             <nav class="panel-selection">
-              <div class="ps-item" onclick="changeTab('p0')">
+              <div class="ps-item ps-active" id="t0" onclick="changeTab('0')">
                 <div class="ps-disc">
-                  ME
+                  <button>
+                    ME
+                  </button>
                 </div>
 
               </div>
-              <div class="ps-item" onclick="changeTab('p1')">
+              <div class="ps-item" id="t1" onclick="changeTab('1')">
                 <div class="ps-disc">
-                  WORKS
+                  <button>
+                    WORKS
+                  </button>
                 </div>
               </div>
-              <div class="ps-item" onclick="changeTab('p2')">
+              <div class="ps-item" id="t2" onclick="changeTab('2')">
                 <div class="ps-disc">
-                  ART
+                  <button>
+                    OTHER
+                  </button>
                 </div>
               </div>
               <div class="ps-item">
                 <div class="ps-email">
-                  jacksonus0204@gmail.com
+                  <a href="mailto:jacksonus0204@gmail.com" target="jacksonus0204@gmail.com">jacksonus0204@gmail.com</a>
                 </div>
                 <div class="icon-container">
                   <a class="icon-link" href="https://www.youtube.com/c/McFriedFries/" target="_blank">
@@ -84,64 +90,68 @@
               <div class="p-header p-name">
                 JACKSON YE
               </div>
-              <div class="p-subhead-s">
+              <br>
 
-              </div>
               <div class="p-para">
-                A mathematics student from University of Waterloo.
+                A mathematics student from the University of Waterloo.
                 <br>
                 This website contains everything that I have been up to.
                 <br>
 
                 <br><br>
-                Thanks for stoping by! :)
+                Thanks for stopping by! :)
               </div>
             </div>
 
             <div class="panel" id="p1">
               <div class="p-header">
-                WORKS
+                PROJECTS
                 <br>
               </div>
               <br>
               <ul class="p-list">
-                <div class="p-bullet">
-                  <a href="https://github.com/jaks024/my-todo-list" target="_blank">My ToDo List</a>
+                <li class="p-bullet">
+                  kolierkitchen.com<a href="https://github.com/jaks024/my-todo-list" target="_blank">&emsp;&#62;</a>
+                  <div class="p-para-s">
+                    Designed and created official gallery website for Kolier Kitchen 
+                  </div>
+                </li>
+                <li class="p-bullet">
+                  My ToDo List<a href="https://github.com/jaks024/my-todo-list" target="_blank">&emsp;&#62;</a>
                   <div class="p-para-s">
                     A 24 hour, non date based to do list desktop application built with Electron
                   </div>
-                </div>
-                <div class="p-bullet">
-                  <a href="https://github.com/jaks024/osu-song-player" target="_blank">osu! song player</a>
+                </li>
+                <li class="p-bullet">
+                  osu! song player<a href="https://github.com/jaks024/osu-song-player" target="_blank">&emsp;&#62;</a>
                   <div class="p-para-s">
                     A MP3 player for all the songs in the osu! folder built with WPF
                   </div>
-                </div>
-                <div class="p-bullet">
-                  <a href="https://play.google.com/store/apps/details?id=com.jy.mywatchlist&hl=en" target="_blank">My
-                    Watch List</a>
+                </li>
+                <li class="p-bullet">
+                  My Watch List<a href="https://play.google.com/store/apps/details?id=com.jy.mywatchlist&hl=en" target="_blank">&emsp;&#62;</a>
                   <div class="p-para-s">
                     An Android app to keep track of your entertainment built with Android Studio
                   </div>
-                </div>
-                <div class="p-bullet">
-                  <a href="https://github.com/jaks024/json-customer-tracker" target="_blank">JSON User Tracker</a>
+                </li>
+                <li class="p-bullet">
+                  JSON User Tracker<a href="https://github.com/jaks024/json-customer-tracker" target="_blank">&emsp;&#62;</a>
                   <div class="p-para-s">
                     A simple to use detailed user data entry system built with WPF
                   </div>
-                </div>
-                <div class="p-bullet">
+                </li>
+                <li class="p-bullet" style="display: none;">
                   <a href="https://github.com/jaks024/GSGen" target="_blank">GSGen - (on hold)</a>
                   <div class="p-para-s">
                     A static website generator with GUI built with WPF
                   </div>
-                </div>
-                <div class="p-bullet">
+                </li>
+                <li class="p-bullet" style="display: none;">
                   <a href="https://jaks.itch.io/" target="_blank">itch.io User Page</a>
                   <div class="p-para-s">
                     My itch.io user page containing free 2D and 3D assets and games.
                   </div>
-                </div>
+                </li>
               </ul>
             </div>
             <div class="panel" id="p2">
@@ -164,15 +174,25 @@
   </div>
 
   <script>
+    const tabBtns = [
+      document.getElementById("t0"),
+      document.getElementById("t1"),
+      document.getElementById("t2")
+    ];
+    const panels = [
+      document.getElementById("p0"),
+      document.getElementById("p1"),
+      document.getElementById("p2")
+    ];
+    var prevTabIdx = 0;
+    const tabActiveTag = "ps-active";
+    const panelActiveTag = "p-show";
     function changeTab(id) {
-
-      for (var i = 0; i < 3; i++) {
-        var d = document.getElementById("p" + i);
-        if (d.classList.contains("p-show")) {
-          document.getElementById("p" + i).classList.remove("p-show");
-        }
-      }
-      document.getElementById(id).classList.add("p-show");
+      tabBtns[prevTabIdx].classList.remove(tabActiveTag);
+      panels[prevTabIdx].classList.remove(panelActiveTag);
+      tabBtns[id].classList.add(tabActiveTag);
+      panels[id].classList.add(panelActiveTag);
+      prevTabIdx = id;
     }
   </script>
 </body>

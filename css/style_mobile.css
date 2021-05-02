@@ -21,6 +21,22 @@ html, body{
     height: 100%;
     
 }
+button{
+    background: none;
+    color: inherit;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    font: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    width: inherit;
+    height: inherit;
+    text-align: inherit;
+    cursor: pointer;
+    text-shadow: inherit;
+}
 
 .wrapper{
     font-family: 'Raleway', sans-serif;
@@ -43,9 +59,10 @@ html, body{
 }
 
 .bg{
-    background-image: url(../bg/0.jpg);
+    background-image: url(../bg/1.webp);
     background-size: cover;
-    filter: blur(3px) brightness(0.5);
+    background-position-x: 35%;
+    filter: blur(5px) brightness(0.5);
 }
 
 .content{
@@ -54,7 +71,6 @@ html, body{
     width: 100%;
     position: absolute;
     top: 0px;
-    transition: all 0.75s ease-in-out;
 }
 .content-offset{
     height: calc(100% - 40px);
@@ -71,7 +87,6 @@ html, body{
     box-sizing: border-box;
     outline: 1px solid white;
     outline-offset: -20px;
-    transition: ease-in-out 0.75s;
 }
 
 .invis{
@@ -89,23 +104,30 @@ html, body{
 .panel-selection{
     z-index: 1;
     height: 200px;
-    width: 210px;
+    width: 250px;
     position: absolute;
-    bottom: 0px;
+    top: 245px;
     right: 0px;
     display: flex;
     flex-direction: column;
 }
 
 .ps-item{
-    height: 10%;
-    padding: 10px 0;
-
+    height: fit-content;
+    margin: 5px 0px;
     position: relative;
     right: 0;
     width: 100%;
+    transition: box-shadow 0.5s ease;
 }
 .ps-item:hover>.ps-disc{
+    right: 10%;
+    
+}
+.ps-active{
+    box-shadow: 20px 0px 0px white;
+}
+.ps-active > .ps-disc{
     right: 10%;
 }
 
@@ -119,7 +141,7 @@ html, body{
     font-size: 50px;
     pointer-events: none;
     font-weight: 900;
-    transition: ease 0.25s;
+    transition: right 0.5s ease;
 }
 
 .icon-container{
@@ -145,7 +167,7 @@ html, body{
     height: 100%;
     object-fit: contain;
     opacity: 0.75;
-    transition: opacity 0.25s ease-in-out;
+    transition: opacity 0.5s ease;
 }
 .icon-container > a > img:hover{
     opacity: 1;
@@ -156,7 +178,7 @@ html, body{
     padding-bottom: 10px;
     margin-top: 10px;
     opacity: 0.75;
-    transition: opacity 0.25s ease-in-out;
+    transition: opacity 0.5s ease;
 }
 .ps-email:hover{
     opacity: 1;
@@ -176,8 +198,8 @@ html, body{
     width: calc(100% - 20px);
     margin: 0px 15px;
     opacity: 0;
-    transition: all 0.5s ease-in-out;
-
+    transition: all 0.5s ease;
+    transition-property: height, opacity;
 }
 
 .panel-container::-webkit-scrollbar{
@@ -223,18 +245,17 @@ html, body{
     font-weight: 900;
     overflow: hidden;
     height: 30px;
-    transition: all 0.25s ease-in-out;
+    transition: height 0.5s ease;
     min-width: 220px;
 }
 .p-bullet>a{
-    transition: color 0.25s ease-in-out;
-
+    transition: color 0.5s ease;
 }
 .p-bullet:hover{
     height: 100px;
 }
 .p-bullet:hover>a{
-    color: rgb(128, 193, 255);
+    color: rgb(107, 183, 255);
 }
 
 .p-para{
