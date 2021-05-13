@@ -110,14 +110,15 @@ button{
     right: 20px;
     display: flex;
     flex-direction: column;
+    align-items:flex-end;
 }
 
 .ps-item{
     height: fit-content;
     margin: 5px 0px;
     position: relative;
-    right: 0;
-    width: 100%;
+    right: 0px;
+    width: fit-content;
     transition: box-shadow 0.5s ease;
 }
 .ps-item:hover>.ps-disc{
@@ -218,7 +219,7 @@ button{
     font-weight: 900;
     min-width: inherit;
     width: 100%;
-    height: 75px;
+    height: 55px;
     text-overflow: clip;
     white-space: nowrap;
     overflow: hidden;
