@@ -33,6 +33,7 @@
         line-height: 25px;
         opacity: 50%;
         transition: all ease 0.25s;
+        transition-property: color, opacity;
         margin: 30px 10px;
         cursor: pointer;
         height: fit-content;
