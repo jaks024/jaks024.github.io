@@ -24,7 +24,7 @@ export function LinkedIconBar()
                 link="https://github.com/jaks024/"
                 imageSrc={githubIcon}
                 alt="https://github.com/jaks024/"
-                styleClassOverride=""
+                styleClassOverride="bar-github-icon"
             />
         </div>
     );

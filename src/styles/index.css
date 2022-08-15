@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700;800;900&display=swap');
 
+html {
+  margin: 0;
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: 'Raleway', sans-serif;
@@ -9,7 +14,7 @@ body {
   background-size: cover;
   backdrop-filter: blur(5px);
   box-shadow:inset 0 0 0 20000px rgba(0, 0, 0, 0.2);
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
   color: white;
   min-height: 500px;

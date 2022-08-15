@@ -33,6 +33,13 @@
     height: 44px;
 }
 
+.bar-github-icon {
+    position: relative;
+    top: 1px;
+    width: 48px;
+    height: 48px;
+}
+
 @media only screen and (max-width: 649px) {
     .linked-icon-bar {
         bottom: 40px;
@@ -58,5 +65,11 @@
         margin-top: 2px;
         width: 31px;
         height: 31px;
+    }
+    .bar-github-icon {
+        position: relative;
+        top: 1px;
+        width: 34px;
+        height: 34px;
     }
 }
