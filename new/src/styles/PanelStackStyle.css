@@ -1,0 +1,38 @@
+@media only screen and (min-width: 649px) {
+    .panel-stack {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        margin-left: 5%;
+    }
+}
+
+.panel {
+    overflow: hidden;
+    transition: all ease 0.5s;
+}
+
+.panel-enabled {
+    height: 100%;
+}
+
+.panel-disabled {
+    height: 0px;
+    opacity: 0;
+    color: transparent;
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+}
+
+@media only screen and (max-width: 649px) {
+    .panel-stack {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: calc(100% - 125px);
+        width: calc(100% - 80px);
+        margin: 30px 0px 0px 30px;
+    }
+}

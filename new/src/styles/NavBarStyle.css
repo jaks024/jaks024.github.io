@@ -1,0 +1,55 @@
+@media only screen and (min-width: 650px) {
+    .nav-bar{
+        position: relative;
+        margin: 94px 0px;
+        width: fit-content;
+        font-size: 40px;
+        font-weight: 900;
+    }
+
+    .nav-label{
+        line-height: 40px;
+        margin: 50px 0px;
+        opacity: 50%;
+        transition: all ease 0.25s;
+        transition-property: color, opacity;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 649px) {
+    .nav-bar{
+        position: relative;
+        width: fit-content;
+        height: 100%;
+        font-size: 25px;
+        font-weight: 900;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav-label{
+        line-height: 25px;
+        opacity: 50%;
+        transition: all ease 0.25s;
+        margin: 30px 10px;
+        cursor: pointer;
+        height: fit-content;
+        width: fit-content;
+        writing-mode: vertical-rl;
+        text-orientation:sideways;
+    }
+}
+
+.nav-label:hover
+{
+    opacity: 100%;
+    color: rgb(100, 172, 255);
+    
+}
+
+.nav-label-selected {
+    color: rgb(100, 172, 255);
+    opacity: 100%;
+}

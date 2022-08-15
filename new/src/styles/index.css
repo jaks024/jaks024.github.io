@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700;800;900&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("https://pbs.twimg.com/media/FYahziCaIAAVH8J?format=jpg&name=4096x4096");
+  background-size: cover;
+  backdrop-filter: blur(5px);
+  box-shadow:inset 0 0 0 20000px rgba(0, 0, 0, 0.2);
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+  min-height: 500px;
+  min-width: 250px;
+}
+
+code {
+  font-family: 'Raleway', sans-serif;
+}
+
+#root {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}

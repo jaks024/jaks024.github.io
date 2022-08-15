@@ -1,0 +1,40 @@
+@media only screen and (min-width: 650px) {
+    .App {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .wrapper {
+        position: relative;
+        display: flex;
+        min-height: 505px;
+        height: 800px;
+        max-width: 100vw;
+        min-width: 550px;
+        margin: 100px 0px;
+        padding: 0px 5% 0px 5%;
+    }
+}
+
+@media only screen and (max-width: 649px) {
+    .App {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+
+    .wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+
+    }
+}
