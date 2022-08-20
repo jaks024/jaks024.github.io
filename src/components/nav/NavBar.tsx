@@ -44,7 +44,7 @@ export function NavBar({onChangePanel}: INavBar)
                 text="RESUME"
                 linkedPanelId={3}
                 isSelected={isCurrentLabel(3)}
-                onClickLabel={() => openResume("https://drive.google.com/file/d/1zAmHa5OZpfw87JlkcgUepqAJ7y9jD18R/view?usp=sharing")}
+                onClickLabel={() => openResume("https://drive.google.com/file/d/1fUqV8VwApD4f0iPGMPxwE1H6NvN05BVG/view?usp=sharing")}
             />
         </div>
     );
