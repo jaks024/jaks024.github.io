@@ -4,7 +4,7 @@ export function LinkedIcon({link, imageSrc, alt, styleClassOverride} : ILinkedIc
 {
     return (
         <div className={`linked-icon ${styleClassOverride}`}>
-            <a href={link} target="_blank">
+            <a href={link} target="_blank" rel="noreferrer">
                 <img src={imageSrc} alt={alt}/>
             </a>
         </div>

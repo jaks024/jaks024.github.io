@@ -10,7 +10,7 @@ body {
   font-family: 'Raleway', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("https://pbs.twimg.com/media/FYahziCaIAAVH8J?format=jpg&name=4096x4096");
+  background-image: url("../background/bg.webp");
   background-size: cover;
   backdrop-filter: blur(5px);
   box-shadow:inset 0 0 0 20000px rgba(0, 0, 0, 0.2);
