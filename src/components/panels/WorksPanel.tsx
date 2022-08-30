@@ -30,7 +30,7 @@ export function WorksPanel({enabled} : IPanel)
                 name: "mflow",
                 description: "A spreadsheet-like web app used for tracking income and expense.",
                 techStack: {
-                    techs: ["React", "JavaScript", "Express", "Google Drive API", "Heroku"]
+                    techs: ["React", "JavaScript", "Express", "Google Drive API V3", "Heroku"]
                 },
                 linkedIcon: {
                     link: "https://github.com/jaks024/mflow",
@@ -49,6 +49,19 @@ export function WorksPanel({enabled} : IPanel)
                     link: "https://github.com/jaks024/jaks024.github.io",
                     imageSrc: githubIcon,
                     alt: "https://github.com/jaks024/jaks024.github.io",
+                    styleClassOverride: PROJECT_LINKED_ICON_CLASS_OVERRIDE
+                }
+            }, 
+            {
+                name: "twit-media-gallery",
+                description: "Electron desktop app to amass, view, and organize tweet media attachments from multiple Twitter users",
+                techStack: {
+                    techs: ["Electron", "HTML", "CSS", "JavaScript", "Twitter API V2"]
+                },
+                linkedIcon: {
+                    link: "https://github.com/jaks024/twit-media-gallery",
+                    imageSrc: githubIcon,
+                    alt: "https://github.com/jaks024/twit-media-gallery",
                     styleClassOverride: PROJECT_LINKED_ICON_CLASS_OVERRIDE
                 }
             }, 
