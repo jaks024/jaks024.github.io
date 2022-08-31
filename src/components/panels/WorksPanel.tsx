@@ -123,7 +123,7 @@ export function WorksPanel({enabled} : IPanel)
     return (
         <div className={"work-panel panel "+ (enabled ? "panel-enabled" : "panel-disabled")}>
             <MainHeading text={MAIN_HEADING}/>
-            <SimpleBar style={{ height: "calc(100% - 90px" }}>
+            <SimpleBar style={{ height: "calc(100% - 80px)" }}>
                 <ProjectStack projects={WORKS.projects}/>
             </SimpleBar>
         </div>

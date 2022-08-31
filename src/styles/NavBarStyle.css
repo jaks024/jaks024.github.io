@@ -14,6 +14,7 @@
         transition: all ease 0.25s;
         transition-property: color, opacity;
         cursor: pointer;
+        user-select: none;
     }
 }
 
@@ -22,7 +23,7 @@
         position: relative;
         width: fit-content;
         height: 100%;
-        font-size: 25px;
+        font-size: 18px;
         font-weight: 900;
         display: flex;
         flex-direction: column;
@@ -30,7 +31,7 @@
     }
 
     .nav-label{
-        line-height: 25px;
+        line-height: 18px;
         opacity: 50%;
         transition: all ease 0.25s;
         transition-property: color, opacity;
@@ -40,6 +41,7 @@
         width: fit-content;
         writing-mode: vertical-rl;
         text-orientation:sideways;
+        user-select: none;
     }
 }
 
@@ -51,6 +53,6 @@
 }
 
 .nav-label-selected {
-    color: rgb(100, 172, 255);
+    color: rgb(62, 171, 255);
     opacity: 100%;
 }

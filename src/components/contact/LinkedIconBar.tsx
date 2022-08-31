@@ -1,7 +1,7 @@
 import { LinkedIcon } from "./LinkedIcon";
-import githubIcon from "../../icon/GitHub-Mark-Light-64px.png"
-import linkedinIcon from "../../icon/linkedin.svg"
-import emailIcon from "../../icon/gmail.png"
+import githubIcon from "../../icon/GitHub-Mark-Light-64px.png";
+import linkedinIcon from "../../icon/linkedin.svg";
+import emailIcon from "../../icon/gmail.webp";
 import "../../styles/LinkedIconBarStyle.css";
 
 export function LinkedIconBar() 

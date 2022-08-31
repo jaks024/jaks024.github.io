@@ -5,6 +5,7 @@ import { IPanel } from "../interfaces/IPanel";
 import "../../styles/MePanelStyle.css";
 import SimpleBar from "simplebar-react";
 import 'simplebar/dist/simplebar.min.css';
+import { useEffect, useState } from "react";
 
 export function MePanel({enabled} : IPanel) 
 {
@@ -13,11 +14,26 @@ export function MePanel({enabled} : IPanel)
 
     const SELF_INTRO = `${"\n"}Thanks for visiting my page!${"\n\n"}Here contains my resume, personal projects, and artworks. It’d make my day if you could check them out! 😊${"\n\n"}I’m currently a 3rd year student at the University of Waterloo majoring in Computational Mathematics with minors in Computing and Combinatorics & Optimization. 👨‍🎓 ${"\n\n"}In my free time, I enjoy working on personal projects, drawing, cooking, working out, reading, hanging out with friends, going on walks, watching anime & k-dramas, gaming, learning new things, and many more! 😎${"\n\n"}Feel free to shoot me a message about anything via any of the contact below. I’d love to meet and chat with you! 😄${"\n\n"}`;
 
+    const [width, setWidth] = useState<number>(window.innerWidth);
+
+    function handleWindowSizeChange() {
+        setWidth(window.innerWidth);
+    }
+    useEffect(() => {
+        window.addEventListener('resize', handleWindowSizeChange);
+        return () => {
+            window.removeEventListener('resize', handleWindowSizeChange);
+        }
+    }, []);
+    
+    const isMobile = width <= 649;
+    const isPortrait = width < 400; 
+
     return (
         <div className={"me-panel panel " + (enabled ? "panel-enabled" : "panel-disabled")}>
             <MainHeading text={MAIN_HEADING}/>
             <SubHeading text={GREETING}/>
-            <SimpleBar style={{ height: "calc(100% - 180px", paddingRight: "10px" }}>
+            <SimpleBar style={{ height: `calc(100% - ${isMobile ? (isPortrait ? "150px" : "100px") : "200px"})`, paddingRight: "10px", boxSizing: "border-box" }}>
                 <Paragraph text={SELF_INTRO}/>
             </SimpleBar>
         </div>

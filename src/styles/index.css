@@ -30,3 +30,15 @@ code {
   height: 100%;
   width: 100%;
 }
+
+@media screen and (max-height:500px) and (min-width:650px){
+  body{
+    zoom: 0.5;
+  }
+}
+
+@media only screen and (max-width: 649px) {
+  body{
+    min-height: 400px;
+  }
+}

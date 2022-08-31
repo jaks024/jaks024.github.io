@@ -1,3 +1,9 @@
 .me-panel {
     max-width: 500px;
 }
+
+@media only screen and (max-width: 649px) {
+    .me-panel {
+        max-width: 350px;
+    }
+}

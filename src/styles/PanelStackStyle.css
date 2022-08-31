@@ -12,6 +12,7 @@
 .panel {
     overflow: hidden;
     transition: all ease 0.5s;
+    transition-property: height, opacity, color;
 }
 
 .panel-enabled {
@@ -22,8 +23,6 @@
     height: 0px;
     opacity: 0;
     color: transparent;
-    -webkit-filter: blur(10px);
-    filter: blur(10px);
 }
 
 @media only screen and (max-width: 649px) {
