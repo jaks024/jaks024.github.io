@@ -14,6 +14,32 @@ export function WorksPanel({enabled} : IPanel)
     const WORKS: IProjectStackContent = {
         projects: [
             {
+                name: "ExpV2",
+                description: "Simplified and redesigned personal monthly income & expense manager with Google Cloud integration (Mflow successor)",
+                techStack: {
+                    techs: ["React", "TypeScript", "HTML", "CSS", "Firebase", "ESLint", "Google OAuth"]
+                },
+                linkedIcon: {
+                    link: "https://github.com/jaks024/expv2",
+                    imageSrc: githubIcon,
+                    alt: "https://github.com/jaks024/expv2",
+                    styleClassOverride: PROJECT_LINKED_ICON_CLASS_OVERRIDE
+                }
+            }, 
+            {
+                name: "gwagon",
+                description: "Simplified and redesigned personal monthly income & expense manager with Google Cloud integration (Mflow successor)",
+                techStack: {
+                    techs: ["Express", "TypeScript", "ESLint", "Docker", "Google Cloud Run"]
+                },
+                linkedIcon: {
+                    link: "https://github.com/jaks024/gwagon",
+                    imageSrc: githubIcon,
+                    alt: "https://github.com/jaks024/gwagon",
+                    styleClassOverride: PROJECT_LINKED_ICON_CLASS_OVERRIDE
+                }
+            }, 
+            {
                 name: "rain",
                 description: "2D game engine for creating games where every pixel is simulated!",
                 techStack: {
@@ -28,7 +54,7 @@ export function WorksPanel({enabled} : IPanel)
             }, 
             {
                 name: "mflow",
-                description: "A spreadsheet-like web app used for tracking income and expense.",
+                description: "A spreadsheet-like web app used for tracking income and expense",
                 techStack: {
                     techs: ["React", "JavaScript", "Express", "Google Drive API V3", "Heroku"]
                 },
@@ -41,7 +67,7 @@ export function WorksPanel({enabled} : IPanel)
             }, 
             {
                 name: "this website",
-                description: "A website to display all of my works.",
+                description: "A website to display all of my works",
                 techStack: {
                     techs: ["React", "TypeScript", "HTML", "CSS"]
                 },
