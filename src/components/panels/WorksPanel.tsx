@@ -28,7 +28,7 @@ export function WorksPanel({enabled} : IPanel)
             }, 
             {
                 name: "gwagon",
-                description: "Simplified and redesigned personal monthly income & expense manager with Google Cloud integration (Mflow successor)",
+                description: "A containerized, serverless backend to access Google Drive API",
                 techStack: {
                     techs: ["Express", "TypeScript", "ESLint", "Docker", "Google Cloud Run"]
                 },
