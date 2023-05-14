@@ -14,7 +14,7 @@ export function MePanel({ enabled }: IPanel) {
   const SELF_INTRO = `${"\n"}Thanks for visiting my page!
     ${"\n"}Here contains my resume, personal projects, and artworks. Feel free to check them out!
     ${"\n"}I’m currently a 3rd year student (3B) at the University of Waterloo majoring in Computational Mathematics with minors in Computing and Combinatorics & Optimization. 
-    ${"\n"}Current main hobbies/focus: working out, drawing, and working on refern. (check it out in project section!) ${"\n"}Other hobbies: chess, reading, bouldering, cooking, gaming, and learning languages (Japanese currently)${"\n"}Want to (in the future): learn piano/guitar, learn singing, and learn dancing  
+    ${"\n"}Current main hobbies/focus: working out, drawing, and working on refern. (check it out in project section!) ${"\n"}Other hobbies: chess, reading, bouldering, cooking, gaming, and learning languages (Japanese currently)${"\n"}Want to (in the future): learn piano/guitar, learn singing, learn dancing, and learn Korean  
     ${"\n"}Feel free to shoot me a message about anything via any of the contact below. I'm down to chat about anything! 😄${"\n\n"}`;
 
   const [width, setWidth] = useState<number>(window.innerWidth);

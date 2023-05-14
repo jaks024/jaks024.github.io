@@ -34,11 +34,14 @@ code {
 @media screen and (max-height:500px) and (min-width:650px){
   body{
     zoom: 0.5;
+    background-position-x: -470px;
   }
 }
 
 @media only screen and (max-width: 649px) {
   body{
     min-height: 400px;
+    background-position-x: -470px;
+
   }
 }
