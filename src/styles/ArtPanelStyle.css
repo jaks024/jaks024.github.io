@@ -3,6 +3,8 @@
 }
 
 .art-image {
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     width: auto;
     height: 250px;
@@ -22,6 +24,8 @@
 
 @media only screen and (max-width: 649px) {
     .art-image {
+        display: -webkit-inline-flex;
+        display: -ms-inline-flexbox;
         display: inline-flex;
         width: auto;
         height: auto;
