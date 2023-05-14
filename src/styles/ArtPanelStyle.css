@@ -1,3 +1,30 @@
 .art-panel {
     width: 100%;
 }
+
+.art-image {
+    display: inline-flex;
+    width: auto;
+    height: 250px;
+    margin-right: 4px;
+}
+
+.art-image > img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.art-container {
+    width: 100%;
+    height: fit-content;
+}
+
+@media only screen and (max-width: 649px) {
+    .art-image {
+        display: inline-flex;
+        width: auto;
+        height: auto;
+        max-height: 250px;
+    }
+}
