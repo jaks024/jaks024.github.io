@@ -13,9 +13,9 @@ export function WorksPanel({ enabled }: IPanel) {
   const WORKS: IProjectStackContent = {
     projects: [
       {
-        name: "refern.",
+        name: "refern. (current focus)",
         description:
-          "The ultimate web art references & reference board editor/manager",
+          "Refern is a reference practice tool + reference organizer + moodboard editor that lets you share your references with anyone and access your references anywhere.",
         techStack: {
           techs: [
             "React",
